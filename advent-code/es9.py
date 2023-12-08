@@ -23,7 +23,7 @@ def val_loc(map, i, seed):
     return s
 class es9:
     map = []
-    with open("es9", "r") as f:
+    with open("prova", "r") as f:
         for line in f:
             table = line.split()
             map.append(table)
@@ -59,6 +59,7 @@ class es9:
                 for j in range(len(seed)):
                     location.append(val_loc(map, i, humidity[j]))
     
+    print(soil)
     min = location[0]
     for loc in location:
         if(min > loc):
